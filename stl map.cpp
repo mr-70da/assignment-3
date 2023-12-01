@@ -3,7 +3,7 @@ using namespace std;
 void modify(string &word){
     for (int i = 0; i < word.size(); ++i) {
         if((ispunct(word[i])||!isalnum(word[i]))&&word[i]!='-'){
-            word.erase(i);
+            word.erase(i,1);
         }
         word[i] = tolower(word[i]);
     }
